@@ -9,7 +9,7 @@ page {
             excludeFromConcatenation = 1
             disableCompression = 1
         }
-        ameostarteaucitron = EXT:ameos_tarteaucitron/Resources/Public/js/ameostarteaucitron.js   
+        ameostarteaucitron = EXT:ameos_tarteaucitron/Resources/Public/js/ameostarteaucitron.js
     }
 
     meta {
@@ -63,7 +63,7 @@ page {
                 50 = TEXT
                 50 {
                     value (
-                        tarteaucitron.user.googletagmanagerId = {$ameos.tarteaucitron.services.googletagmanager.googletagmanagerId};
+                        tarteaucitron.user.googletagmanagerId = '{$ameos.tarteaucitron.services.googletagmanager.googletagmanagerId}';
                         (tarteaucitron.job = tarteaucitron.job || []).push('googletagmanager');
                     )
                     if.isTrue = {$ameos.tarteaucitron.services.googletagmanager}
@@ -131,7 +131,7 @@ page {
                 130 = TEXT
                 130 {
                     value (
-                        tarteaucitron.user.clickyId = {$ameos.tarteaucitron.services.clicky.clickyId};
+                        tarteaucitron.user.clickyId = '{$ameos.tarteaucitron.services.clicky.clickyId}';
                         tarteaucitron.user.clickyMore = AmeosTacClickyMore();
                         (tarteaucitron.job = tarteaucitron.job || []).push('clicky');
                     )
@@ -176,7 +176,7 @@ page {
                 180 = TEXT
                 180 {
                     value (
-                        tarteaucitron.user.gajsUa = {$ameos.tarteaucitron.services.gajs.gajsUa};
+                        tarteaucitron.user.gajsUa = '{$ameos.tarteaucitron.services.gajs.gajsUa}';
                         tarteaucitron.user.gajsMore = AmeosTacGajsMore(); /* add here your optionnal _ga.push() */
                         (tarteaucitron.job = tarteaucitron.job || []).push('gajs');
                     )
@@ -241,7 +241,7 @@ page {
                 240 = TEXT
                 240 {
                     value (
-                        tarteaucitron.user.visualrevenueId = {$ameos.tarteaucitron.services.visualrevenue.visualrevenueId};
+                        tarteaucitron.user.visualrevenueId = '{$ameos.tarteaucitron.services.visualrevenue.visualrevenueId}';
                         (tarteaucitron.job = tarteaucitron.job || []).push('visualrevenue');
                     )
                     if.isTrue = {$ameos.tarteaucitron.services.visualrevenue}
@@ -382,7 +382,7 @@ page {
                 410 = TEXT
                 410 {
                     value (
-                        tarteaucitron.user.adwordsremarketingId = {$ameos.tarteaucitron.services.googleadwordsremarketing.adwordsremarketingId};
+                        tarteaucitron.user.adwordsremarketingId = '{$ameos.tarteaucitron.services.googleadwordsremarketing.adwordsremarketingId}';
                         (tarteaucitron.job = tarteaucitron.job || []).push('googleadwordsremarketing');
                     )
                     if.isTrue = {$ameos.tarteaucitron.services.googleadwordsremarketing}
@@ -533,7 +533,7 @@ page {
                 590 = TEXT
                 590 {
                     value (
-                        tarteaucitron.user.sharethisPublisher = {$ameos.tarteaucitron.services.sharethis.sharethisPublisher};
+                        tarteaucitron.user.sharethisPublisher = '{$ameos.tarteaucitron.services.sharethis.sharethisPublisher}';
                         (tarteaucitron.job = tarteaucitron.job || []).push('sharethis');
                     )
                     if.isTrue = {$ameos.tarteaucitron.services.sharethis}
