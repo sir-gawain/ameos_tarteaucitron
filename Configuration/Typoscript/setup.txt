@@ -46,7 +46,7 @@ page {
                 30 {
                     value (
                         tarteaucitron.user.googlemapsKey = '{$ameos.tarteaucitron.services.gmaps.googlemapsKey}';
-                        tarteaucitron.user.mapscallback = AmeosTacMapscallback;
+                        tarteaucitron.user.mapscallback = 'AmeosTacMapscallback';
                         (tarteaucitron.job = tarteaucitron.job || []).push('googlemaps');
                     )
                     if.isTrue = {$ameos.tarteaucitron.services.gmaps}
