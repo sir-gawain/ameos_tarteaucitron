@@ -1,20 +1,18 @@
 {
     "name": "ameos/ameos_tarteaucitron",
-    "description": "Integrates tarteaucitron.js in TYPO3 (see : https://opt-out.ferank.eu )",
+    "description": "Integrates tarteaucitron.js in TYPO3 (see : https://tarteaucitron.io/en/ )",
+    "version": "1.1.0",
     "type": "typo3-cms-extension",
     "homepage": "https://github.com/ameos/ameos_tarteaucitron",
-    "require": {
-        "typo3/cms-core": "^8.7 | ^9 | dev-master",
-        "typo3/cms-backend": "^8.7 | ^9 | dev-master",
-        "typo3/cms-frontend": "^8.7 | ^9 | dev-master",
-        "typo3/cms-recordlist": "^8.7 | ^9 | dev-master",
-        "php": ">=7.0.0"
+    "require-dev": {
+        "npm-asset/tarteaucitronjs": "20210306"
+    },
+    "config": {
+        "vendor-dir": "Resources/Public/libs/"
     },
     "keywords": [
         "TYPO3",
-        "CMS",
-        "Dailymotion",
-        "Media asset provider"
+        "CMS"
     ],
     "license": "GPL-3.0-or-later",
     "authors": [
@@ -29,5 +27,17 @@
             "Ameos\\AmeosTarteaucitron\\": "Classes"
         }
     },
-    "non-feature-branches": ["development", "staging"]
+    "non-feature-branches": ["development", "staging"],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "ameos_tarteaucitron"
+        }
+    },
+    "minimum-stability": "dev"
 }
